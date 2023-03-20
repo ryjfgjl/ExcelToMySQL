@@ -1,6 +1,5 @@
 # ExcelToMySQL: batch import excel files into mysql database automatically
-<img width="733" alt="image" src="https://user-images.githubusercontent.com/39375647/222678425-2abecaab-b0fb-4a2c-9385-8f595c0f12b4.png">
-
+<img width="734" alt="image" src="https://user-images.githubusercontent.com/39375647/226232048-e82bf331-a1c0-479d-9a2d-844a3fe8df19.png">
 
 
 ## What is it?
