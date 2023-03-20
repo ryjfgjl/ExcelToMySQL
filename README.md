@@ -49,10 +49,10 @@ Sync data in excel into database in realtime.
 ## Excel：
   Choose files or directory as your data source
 
-#### MySQL Connection: 
+## MySQL Connection: 
   Input connection information of your target database
 
-### Excel Options：
+## Excel Options：
   #### Recursion of Directories
       Recursive directories to find all excel files
   #### Only Import Excel Last Modified
@@ -60,37 +60,48 @@ Sync data in excel into database in realtime.
   #### Encoding of CSV：
     Tools can auto-detect encoding of csv files(default), 
     and you can choose or input other value
+  #### Field Name Row：
+    The row number of field name in excel, default 1 if not populated
+  #### First Data Row：
+    The row number of data start in excel, default 2 if not populated
+  #### Skip Footer Rows：
+    The number of rows to skip on the foot of excel, default 0 if not populated
+  #### Index or Name of Sheet to Import：
+    assign the Sheet Index or Sheet Name to import
+  #### Skip Sheet Which Name Start With：
+    assign a character to skip sheet when sheet name start with it
+  #### Trim Field Values：
+    Remove spaces around the field value
   #### Replace Values to Null：
     values populated(comma separated) will be replaced to null
-  #### The Header on Row：
-    Set which row as Column name
-  #### The Data Start From Row：
-    The data start from the row
-  #### Trim Spaces：
-    Trim spaces around the data
 
-
-  #### Append All Data to One Exists Table：
-    Under Append mode, import all data to the table populated
-  #### Truncate Target Table Before Append
-    Truncate Target Table Before Append
-  #### Transform Chinese in Table/Column Name to The First Letter
-    Transform chinese in table name and column name to the first letter of its pinyin
-  #### Add Table Prefix：
-    The value populated will be added to table name before
-  #### Add a Key Column, Value is The Row Number：
-    Add a Key Column, Value is The Row Number
-  #### Add a Column, Values is The Excel Name：
-    For imported table, add a column which value is its excel name
+## Schedule Options：
+  make a schedule, input a start time(default now if not populated) and a interval
   
-  #### Run Sql Before Starting
-    When starting import, run sql in the sql file choosed before
-  #### Run Sql After Comleting
-    When complete import, run sql in the sql file choosed after
-  #### Save Current Configuration
-    Save Current Configuration
-  #### Load Saved Configuration
-    Load Saved Configuration
+## MySQL Options：
+  #### Drop table if exists：
+    drop table if exists
+  #### Create table if not exists：
+    create table if not exists
+  #### Truncate Table Before
+    Truncate Table Before Import
+  #### Append All Data into One Table：
+   import all data into the table populated
+  #### Append Data into a same table in the case：
+   import data to the table satify the case
+  #### Increase column length when not enough
+    Increase column length when it is not enough
+  #### When excel has redundant column
+    ignore redundant or add new
+  #### When excel data duplicate with table
+    ignore or update
+  #### Add prefix for the created table names：
+    The value populated will be added to table name before
+  #### Add a key column which value is increament integerr：
+    Add a key column which value is increament integer
+  #### Save excel name to the column：
+    Save excel name to the column
+ 
 
 ## How the tool works?
   Some logic is described below when the tool work
@@ -110,7 +121,6 @@ Sync data in excel into database in realtime.
 ## How To Schedule
   The tool can directly run in command line without gui, so you can schedule it on the Windows or Linux. A configuration file(config.yaml) is needed to add.
     
- 
     ExcelToMySQL.exe D:/config.yaml
 
 # Getting Help
