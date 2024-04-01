@@ -2,7 +2,7 @@
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6t3n0o6au33c6t5cxsmq.png)
 
 ## What is it?
-**ExcelToDatabase** is a productivity tool that can automatically import excel into mysql. ***Automation*** is its main feature, because it can automatically generate table information based on excel to establish contact with the database, and finally import the data into the database table. ***Batch*** is another feature of it, because it can be automated, so you can import thousands of tables at one time instead of importing them one by one. ***Scheduled*** import and export, real-time refresh, to achieve seamless connection between Excel data and database table data.
+**ExcelToMySQL** is a productivity tool that can automatically import excel into mysql. ***Automation*** is its main feature, because it can automatically generate table information based on excel to establish contact with the database, and finally import the data into the database table. ***Batch*** is another feature of it, because it can be automated, so you can import thousands of tables at one time instead of importing them one by one. ***Scheduled*** import and export, real-time refresh, to achieve seamless connection between Excel data and database table data.
 
 ## Features
 ### Automatic
